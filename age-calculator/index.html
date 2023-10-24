@@ -1,1 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    
+           
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+    
+        h1 {
+            text-align: center;
+            background-color: #0073e6;
+            color: #fff;
+            padding: 20px;
+            margin: 0;
+        }
+    
+        form {
+            text-align: center;
+            margin: 20px auto;
+            max-width: 400px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+    
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    
+        input {
+            width: 70px;
+            padding: 5px;
+            margin: 5px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+    
+        button {
+            background-color: #0073e6;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+    
+        button:hover {
+            background-color: #005bbd;
+        }
+    
+        #result {
+            text-align: center;
+            font-weight: bold;
+            margin: 20px;
+            font-size: 18px;
+        }
+    </style>
+    
+    
+</head>
+<body>
+    <h1>Age Calculator</h1>
+    <form id="ageCalculatorForm">
+        <label for="dob">Date of Birth:</label>
+        <input type="number" id="dob" placeholder="Day" min="1" max="31" required>
+        <input type="number" id="month" placeholder="Month" min="1" max="12" required>
+        <input type="number" id="year" placeholder="Year" min="1900" max="2099" required>
+        <button type="button" id="calculateButton">Calculate Age</button>
+    </form>
+    <p id="result"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
 
